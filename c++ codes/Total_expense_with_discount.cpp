@@ -7,21 +7,24 @@ using namespace std;
 int main()
 
 {
+    // declairing variables
+    
     float total_expense;
     int Quantity;
     float price;
     int discount;
-
+    
+    //  Input from the user
     cout<<"Enter the quantity : ";
     cin>>Quantity;
     cout<<"Enter the price: ";
     cin>>price;
+    
+    total_expense = Quantity*price;   // Total expense without discount
 
-    total_expense = Quantity*price;
-
-    if(total_expense>5000)
+    if(total_expense>5000) 
     {
-        discount = (total_expense*0.1);
+        discount = (total_expense*0.1);      // 10% discount
         total_expense = total_expense-discount;
     }
 
